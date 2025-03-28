@@ -38,6 +38,7 @@ endif()
 # SRC_FILES at CMakeLists.txt:48 (file)
 file(GLOB NEW_GLOB LIST_DIRECTORIES true "C:/src/stm/stm32f407-bd/App/hw/src/*.c")
 set(OLD_GLOB
+  "C:/src/stm/stm32f407-bd/App/hw/src/led.c"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

@@ -73,6 +73,12 @@
 },
 {
   "directory": "C:/src/stm/stm32f407-bd/build/Debug",
+  "command": "C:\\ST\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER -IC:/src/stm/stm32f407-bd/App/ap -IC:/src/stm/stm32f407-bd/App/common -IC:/src/stm/stm32f407-bd/App/common/include -IC:/src/stm/stm32f407-bd/App/hw -IC:/src/stm/stm32f407-bd/App/hw/include -IC:/src/stm/stm32f407-bd/Core/Inc -IC:/src/stm/stm32f407-bd/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/src/stm/stm32f407-bd/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/src/stm/stm32f407-bd/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/src/stm/stm32f407-bd/Drivers/CMSIS/Include  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o CMakeFiles\\stm32f407-bd.dir\\App\\hw\\src\\led.c.obj -c C:\\src\\stm\\stm32f407-bd\\App\\hw\\src\\led.c",
+  "file": "C:\\src\\stm\\stm32f407-bd\\App\\hw\\src\\led.c",
+  "output": "CMakeFiles\\stm32f407-bd.dir\\App\\hw\\src\\led.c.obj"
+},
+{
+  "directory": "C:/src/stm/stm32f407-bd/build/Debug",
   "command": "C:\\ST\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER -IC:/src/stm/stm32f407-bd/Core/Inc -IC:/src/stm/stm32f407-bd/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/src/stm/stm32f407-bd/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/src/stm/stm32f407-bd/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/src/stm/stm32f407-bd/Drivers/CMSIS/Include  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Core\\Src\\system_stm32f4xx.c.obj -c C:\\src\\stm\\stm32f407-bd\\Core\\Src\\system_stm32f4xx.c",
   "file": "C:\\src\\stm\\stm32f407-bd\\Core\\Src\\system_stm32f4xx.c",
   "output": "cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Core\\Src\\system_stm32f4xx.c.obj"
