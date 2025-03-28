@@ -39,6 +39,7 @@ endif()
 file(GLOB NEW_GLOB LIST_DIRECTORIES true "C:/src/stm/stm32f407-bd/App/hw/src/*.c")
 set(OLD_GLOB
   "C:/src/stm/stm32f407-bd/App/hw/src/led.c"
+  "C:/src/stm/stm32f407-bd/App/hw/src/uart.c"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
