@@ -2,7 +2,7 @@
 
 
 #ifdef _USE_HW_LED
-
+#include "cli.h"
 
 
 // 내부 참조 데이터 정의 
@@ -28,6 +28,8 @@ static led_tbl_t led_tbl[LED_MAX_CH] = {
 	{GPIOE, GPIO_PIN_15, GPIO_PIN_RESET, GPIO_PIN_SET}
 };
 
+static void cliLed(cli_args_t *);
+
 bool ledInit(void)
 {
 
@@ -35,6 +37,8 @@ bool ledInit(void)
   {
     ledOff(i);
   }
+
+  cliAdd("led", cliLed);
 
   return true;
 }
@@ -59,4 +63,50 @@ void ledToggle(uint8_t ch)
 
   HAL_GPIO_TogglePin(led_tbl[ch].port, led_tbl[ch].pin);
 }
+
+
+
+void cliLed(cli_args_t *args) 
+{
+  bool ret = false;
+
+  if (args->argc == 1 && args->isStr(0, "on"))
+  {
+    uint8_t led_ch;
+    led_ch = (uint8_t)args->getData(1);
+    ledOn(led_ch);
+    ret = true;
+  }
+  
+  if (args->argc == 1 && args->isStr(0, "off"))
+  {
+    uint8_t led_ch;
+    led_ch = (uint8_t)args->getData(1);
+    ledOff(led_ch);
+    ret = true;
+  }
+
+  if (args->argc == 1 && args->isStr(0, "test"))
+  {
+    while(cliKeepLoop())
+    {
+      cliPrintf("led on\n");
+      ledOn(_DEF_LED1);
+      delay(500);
+      //바로 빠져나오고 싶으면 Delay 아니라 millis 함수 사용할 것.
+      cliPrintf("led off\n");
+      ledOff(_DEF_LED1);
+      delay(500);
+    }
+    ret = true;
+  }
+
+  if (!ret)
+  {
+    cliPrintf("led on 0~%d\n", LED_MAX_CH - 1);
+    cliPrintf("led off 0~%d\n", LED_MAX_CH - 1);
+    cliPrintf("led test\n");
+  }
+}
+
 #endif

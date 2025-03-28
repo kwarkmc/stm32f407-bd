@@ -35,3 +35,15 @@
 491	2938	7648549253996609	CMakeFiles/stm32f407-bd.dir/App/hw/src/led.c.obj	a9a324a861e27424
 52	146	0	C:/src/stm/stm32f407-bd/build/Debug/CMakeFiles/cmake.verify_globs	6ce3218bc4b9bb2e
 38	133	0	C:/src/stm/stm32f407-bd/build/Debug/CMakeFiles/cmake.verify_globs	6ce3218bc4b9bb2e
+33	142	0	C:/src/stm/stm32f407-bd/build/Debug/CMakeFiles/cmake.verify_globs	6ce3218bc4b9bb2e
+151	1011	7648554273550891	CMakeFiles/stm32f407-bd.dir/App/hw/src/led.c.obj	a9a324a861e27424
+1012	2016	7648554280460124	stm32f407-bd.elf	876e25788a5a6a45
+42	135	0	C:/src/stm/stm32f407-bd/build/Debug/CMakeFiles/cmake.verify_globs	6ce3218bc4b9bb2e
+141	1040	7648556177432154	CMakeFiles/stm32f407-bd.dir/App/hw/src/led.c.obj	a9a324a861e27424
+1041	2152	7648556185538540	stm32f407-bd.elf	876e25788a5a6a45
+44	147	0	C:/src/stm/stm32f407-bd/build/Debug/CMakeFiles/cmake.verify_globs	6ce3218bc4b9bb2e
+155	1069	7648560251071408	CMakeFiles/stm32f407-bd.dir/App/hw/src/led.c.obj	a9a324a861e27424
+1071	2191	7648560259098438	stm32f407-bd.elf	876e25788a5a6a45
+41	135	0	C:/src/stm/stm32f407-bd/build/Debug/CMakeFiles/cmake.verify_globs	6ce3218bc4b9bb2e
+145	935	7648560698800250	CMakeFiles/stm32f407-bd.dir/App/hw/src/led.c.obj	a9a324a861e27424
+936	2016	7648560706582843	stm32f407-bd.elf	876e25788a5a6a45
