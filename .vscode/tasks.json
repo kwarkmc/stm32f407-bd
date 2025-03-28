@@ -67,6 +67,27 @@
                 "all"
             ],
             "preset": "${command:cmake.activeBuildPresetName}",
+            "group": "build",
+            "problemMatcher": [],
+            "detail": "CMake 템플릿 빌드 작업"
+        },
+        {
+            "type": "cmake",
+            "label": "CMake: 정리",
+            "command": "clean",
+            "preset": "${command:cmake.activeBuildPresetName}",
+            "problemMatcher": [],
+            "detail": "CMake 템플릿 정리 작업",
+            "group": "build"
+        },
+        {
+            "type": "cmake",
+            "label": "CMake: 빌드",
+            "command": "build",
+            "targets": [
+                "all"
+            ],
+            "preset": "${command:cmake.activeBuildPresetName}",
             "group": {
                 "kind": "build",
                 "isDefault": true

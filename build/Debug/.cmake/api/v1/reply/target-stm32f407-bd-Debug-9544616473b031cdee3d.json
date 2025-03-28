@@ -12,6 +12,7 @@
 		[
 			"add_executable",
 			"target_link_libraries",
+			"target_include_directories",
 			"target_sources"
 		],
 		"files" : 
@@ -41,9 +42,21 @@
 			},
 			{
 				"command" : 2,
+				"file" : 0,
+				"line" : 62,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
 				"file" : 1,
 				"line" : 73,
 				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 56,
+				"parent" : 0
 			}
 		]
 	},
@@ -73,6 +86,26 @@
 			],
 			"includes" : 
 			[
+				{
+					"backtrace" : 4,
+					"path" : "C:/src/stm/stm32f407-bd/App/ap"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/src/stm/stm32f407-bd/App/common"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/src/stm/stm32f407-bd/App/common/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/src/stm/stm32f407-bd/App/hw"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/src/stm/stm32f407-bd/App/hw/include"
+				},
 				{
 					"backtrace" : 3,
 					"path" : "C:/src/stm/stm32f407-bd/Core/Inc"
@@ -109,7 +142,13 @@
 				1,
 				2,
 				3,
-				4
+				4,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11
 			]
 		},
 		{
@@ -136,6 +175,26 @@
 			],
 			"includes" : 
 			[
+				{
+					"backtrace" : 4,
+					"path" : "C:/src/stm/stm32f407-bd/App/ap"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/src/stm/stm32f407-bd/App/common"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/src/stm/stm32f407-bd/App/common/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/src/stm/stm32f407-bd/App/hw"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/src/stm/stm32f407-bd/App/hw/include"
+				},
 				{
 					"backtrace" : 3,
 					"path" : "C:/src/stm/stm32f407-bd/Core/Inc"
@@ -204,7 +263,13 @@
 				1,
 				2,
 				3,
-				4
+				4,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11
 			]
 		},
 		{
@@ -218,12 +283,6 @@
 			"name" : "Object Libraries",
 			"sourceIndexes" : 
 			[
-				6,
-				7,
-				8,
-				9,
-				10,
-				11,
 				12,
 				13,
 				14,
@@ -231,47 +290,89 @@
 				16,
 				17,
 				18,
-				19
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25
 			]
 		}
 	],
 	"sources" : 
 	[
 		{
-			"backtrace" : 4,
+			"backtrace" : 5,
 			"compileGroupIndex" : 0,
 			"path" : "Core/Src/main.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 5,
 			"compileGroupIndex" : 0,
 			"path" : "Core/Src/stm32f4xx_it.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 5,
 			"compileGroupIndex" : 0,
 			"path" : "Core/Src/stm32f4xx_hal_msp.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 5,
 			"compileGroupIndex" : 0,
 			"path" : "Core/Src/sysmem.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 5,
 			"compileGroupIndex" : 0,
 			"path" : "Core/Src/syscalls.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 5,
 			"compileGroupIndex" : 1,
 			"path" : "startup_stm32f407xx.s",
 			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "App/ap/ap.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "App/common/src/cli.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "App/common/src/cli_gui.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "App/common/src/qbuffer.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "App/common/src/util.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "App/hw/hw.c",
+			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 3,
